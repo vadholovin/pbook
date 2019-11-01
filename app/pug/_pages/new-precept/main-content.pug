@@ -1,0 +1,117 @@
+.col-sm-12
+  section.py-4.py-lg-5
+    h1.h3.text-center.mb-4 Создать предписание
+    <form class="form-create" method="post" enctype="multipart/form-data">
+      <div class="form-group row">
+        <label for="constructive" class="col-md-3 col-form-label">Конструктив</label>
+        <div class="col-md-9">
+          <select id="constructive" class="form-control">
+            <option selected>Выберите 'Конструктив' из списка</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="borderFrom" class="col-md-3 col-form-label">Граница работ - от</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="borderFrom" placeholder="Введите 'границу - от'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="borderTo" class="col-md-3 col-form-label">Граница работ - до</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="borderTo" placeholder="Введите 'границу - до'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="workType" class="col-md-3 col-form-label">Вид работ</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="workType" placeholder="Введите 'вид работы'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="violationType" class="col-md-3 col-form-label">Вид нарушения</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="violationType" placeholder="Введите 'вид нарушения'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="violationText" class="col-md-3 col-form-label">Текст нарушения</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="violationText" placeholder="Введите 'текст нарушения'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cipherRD" class="col-md-3 col-form-label">Шифр РД</label>
+        <div class="col-md-9">
+          <select id="cipherRD" class="form-control">
+            <option selected>Выберите 'шифр РД' из списка</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cipherTD" class="col-md-3 col-form-label">Шифр ТД</label>
+        <div class="col-md-9">
+          <select id="cipherTD" class="form-control">
+            <option selected>Выберите 'шифр ТД' из списка</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="elementNumber" class="col-md-3 col-form-label">Привязка работ к № Элементов</label>
+        <div class="col-md-9">
+          <select id="elementNumber" class="form-control">
+            <option selected>Выберите '№ элементов'</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="executorCompany" class="col-md-3 col-form-label">Организация, выполняющая работы</label>
+        <div class="col-md-9">
+          <select id="executorCompany" class="form-control">
+            <option selected>Выберите из списка организацию</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="deadline" class="col-md-3 col-form-label">Срок устранения</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="deadline" placeholder="Укажите срок устранения">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="preceptComment" class="col-md-3 col-form-label">Комментарии</label>
+        <div class="col-md-9">
+          <textarea class="form-control" id="preceptComment" rows="3" placeholder="Текстовый блок 1"></textarea>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="form-group row">
+        <label for="docFiles" class="col-md-3">Нажмите, чтобы загрузить файлы</label>
+        <div class="col-md-9">
+          <input type="file" class="form-control-file" id="docFiles">
+        </div>
+      </div>
+
+      <hr>
+      .form-btns.d-flex.justify-content-center
+        button.btn.btn-secondary(
+          type="reset"
+        ) Отмена
+
+        button.btn.btn-dark(
+          type="submit"
+        ) Создать
+
+    </form>

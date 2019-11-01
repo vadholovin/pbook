@@ -1,0 +1,78 @@
+.col-sm-12
+  section.py-4.py-lg-5
+    h1.h2.mb-4.text-center Ответ по задаче
+    .report.p-3.rounded-sm
+      h2.h3 Задача id
+      hr
+      section.py-2
+        h2.h4.mb-2 Описание задачи
+        dl.desc-list.row.mb-2
+          dt.col-sm-3.col-xl-2 Автор:
+          dd.col-sm-9.col-xl-10 ФИО
+
+          dt.col-sm-3.col-xl-2 Организация:
+          dd.col-sm-9.col-xl-10 Наименование
+
+          dt.col-sm-3.col-xl-2 Дата создания:
+          dd.col-sm-9.col-xl-10 yyyy-mm-dd
+
+          dt.col-sm-3.col-xl-2 Тип задачи:
+          dd.col-sm-9.col-xl-10 рассмотрение документации / освидетельствование работ / устранение нарушения
+
+          dt.col-sm-3.col-xl-2 Признак:
+          dd.col-sm-9.col-xl-10 На согласование / на исправление
+
+          dt.col-sm-3.col-xl-2 Шифр / Работы:
+          dd.col-sm-9.col-xl-10 Полный шифр документа / Наименование работ
+
+          dt.col-sm-3.col-xl-2 Наим. / Граница:
+          dd.col-sm-9.col-xl-10 Полное наименование документа / Граница от - Граница до
+
+          dt.col-sm-3.col-xl-2 Комментарии:
+          dd.col-sm-9.col-xl-10 Текстовый блок 1
+
+      hr
+      <form method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="reportResult"><b>Результат:</b></label>
+              <select class="form-control" id="reportResult">
+                <option selected>Выбрать статус</option>
+                <option>Согласовано</option>
+                <option>Согласовано с замечаниями</option>
+                <option>Не согласовано</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="reportComment"><b>Комментарии:</b></label>
+              <textarea class="form-control" id="reportComment" rows="4" placeholder="Текстовый блок 2"></textarea>
+            </div>
+          </div>
+        </div>
+        h3.h6.mb-4.title-line Вложенные документы
+        .row
+          .col-lg-6
+            .docs-list
+              .docs-list__item
+                a.docs-list__link(href="#", target="_blank")
+                  <i class="fa fa-file" aria-hidden="true"></i>
+                  span.docs-list__text Проектная документация.dwg
+          .col-lg-6
+            <div class="form-group">
+              <label for="reportFile">Загрузить документ</label>
+              <input type="file" class="form-control-file" id="reportFile">
+            </div>
+        hr
+        .form-btns.d-flex.justify-content-center
+          button.btn.btn-secondary(
+            type="reset"
+          ) Отменить
+
+          button.btn.btn-dark(
+            type="submit"
+          ) Сохранить
+      </form>
+

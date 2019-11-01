@@ -1,0 +1,67 @@
+.col-md-12
+  section.py-4.py-lg-5
+    h2.h2.mb-4.text-center Карточка документа id
+    .row.justify-content-center
+      .col-md-10
+        .row
+          .col-md-6
+            ul.features-list
+              li.features-list__item Тип документации
+              li.features-list__item Шифр комплекта
+              li.features-list__item Оригинальный шифр
+              li.features-list__item Наименование комплекта
+              li.features-list__item Наименование организации
+
+          .col-md-6
+            .docs-list
+              .docs-list__item
+                a.docs-list__link(href="#", target="_blank")
+                  <i class="fa fa-file-word-o" aria-hidden="true"></i>
+                  span.docs-list__text История изменений.docs
+              .docs-list__item
+                a.docs-list__link(href="#", target="_blank")
+                  <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                  span.docs-list__text История изменений.pdf
+              .docs-list__item
+                a.docs-list__link(href="#", target="_blank")
+                  <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                  span.docs-list__text История изменений.xls
+              .docs-list__item
+                a.docs-list__link(href="#", target="_blank")
+                  <i class="fa fa-file" aria-hidden="true"></i>
+                  span.docs-list__text История изменений.dwg
+
+  section.py-4.py-lg-5
+    h3.h3.mb-4.text-center История изменений
+    .table-responsive
+      <table class="table table-bordered table-hover text-center">
+        <thead>
+          <tr>
+            <th scope="col">Версия</th>
+            <th scope="col">Дата создания</th>
+            <th scope="col">Автор</th>
+            <th scope="col">Дата ответа</th>
+            <th scope="col">Исполнитель</th>
+            <th scope="col">Статус</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>05/09/2019</td>
+            <td>ФИО</td>
+            <td>dd/mm/yyyy</td>
+            <td>ФИО</td>
+            <td>Не согласовано</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>06/09/2019</td>
+            <td>ФИО</td>
+            <td>dd/mm/yyyy</td>
+            <td>ФИО</td>
+            <td>Согласовано с комментариями</td>
+          </tr>
+
+        </tbody>
+      </table>

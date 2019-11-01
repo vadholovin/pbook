@@ -1,0 +1,93 @@
+.col-sm-12
+  section.py-4.py-lg-5
+    h1.h3.text-center.mb-4 Создать документ
+    <form class="form-create" method="post" enctype="multipart/form-data">
+      <div class="form-group row">
+        <label for="docType" class="col-md-3 col-form-label">Тип документа</label>
+        <div class="col-md-9">
+          <select id="docType" class="form-control">
+            <option selected>Выберите 'тип документа' из списка</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="originalCipher" class="col-md-3 col-form-label">Оригинальный шифр документа</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="originalCipher" placeholder="Введите 'оригинальный шифр комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fullCipher" class="col-md-3 col-form-label">Полный шифр документа</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="fullCipher" placeholder="Введите 'полный шифр комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="sectionCipher" class="col-md-3 col-form-label">Шифр комплекта - Раздел</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="sectionCipher" placeholder="Введите 'Раздел комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="subsectionCipher" class="col-md-3 col-form-label">Шифр комплекта - Подраздел</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="subsectionCipher" placeholder="Введите 'Подаздел комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="partCipher" class="col-md-3 col-form-label">Шифр комплекта - Часть</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="partCipher" placeholder="Введите 'Часть комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="bookCipher" class="col-md-3 col-form-label">Шифр комплекта - Книга</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="bookCipher" placeholder="Введите 'номер книги комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fullName" class="col-md-3 col-form-label">Полное наименование комплекта</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="fullName" placeholder="Введите 'наименование комплекта'">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="elementNumber" class="col-md-3 col-form-label">Привязка документа к № Элементов</label>
+        <div class="col-md-9">
+          <select id="elementNumber" class="form-control">
+            <option selected>Выберите '№ элементов'</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="docComment" class="col-md-3 col-form-label">Комментарии</label>
+        <div class="col-md-9">
+          <textarea class="form-control" id="docComment" rows="3" placeholder="Текстовый блок 1"></textarea>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="form-group row">
+        <label for="docFiles" class="col-md-3">Нажмите, чтобы загрузить файлы</label>
+        <div class="col-md-9">
+          <input type="file" class="form-control-file" id="docFiles">
+        </div>
+      </div>
+
+      <hr>
+      .form-btns.d-flex.justify-content-center
+        button.btn.btn-secondary(
+          type="reset"
+        ) Отмена
+
+        button.btn.btn-dark(
+          type="submit"
+        ) Создать
+
+    </form>

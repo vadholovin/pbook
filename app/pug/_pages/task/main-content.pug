@@ -1,0 +1,104 @@
+.col-sm-12
+  section.py-4.py-lg-5
+    h1.h2.mb-4 Задача id
+    hr
+    .task-btns
+      a.btn.btn-secondary(
+        href="#",
+      ) Редактировать <br> задачу
+      a.btn.btn-secondary(
+        href="#",
+      ) Отозвать задачу
+      a.btn.btn-secondary(
+        href="task-report.html",
+      ) Ответить
+      a.btn.btn-secondary(
+        href="task-report.html",
+      ) Редактировать <br> ответ
+
+  section.py-2
+    h2.h4.mb-4.title-line Детали задачи
+    dl.desc-list.row.mb-2
+      dt.col-sm-3.col-xl-2 Автор:
+      dd.col-sm-9.col-xl-10 ФИО
+
+      dt.col-sm-3.col-xl-2 Организация:
+      dd.col-sm-9.col-xl-10 Наименование
+
+      dt.col-sm-3.col-xl-2 Дата создания:
+      dd.col-sm-9.col-xl-10 yyyy-mm-dd
+
+      dt.col-sm-3.col-xl-2 Тип задачи:
+      dd.col-sm-9.col-xl-10 рассмотрение документации / освидетельствование работ / устранение нарушения
+
+      dt.col-sm-3.col-xl-2 Признак:
+      dd.col-sm-9.col-xl-10 На согласование / на исправление
+
+      dt.col-sm-3.col-xl-2 Шифр / Работы:
+      dd.col-sm-9.col-xl-10 Полный шифр документа / Наименование работ
+
+      dt.col-sm-3.col-xl-2 Наим. / Граница:
+      dd.col-sm-9.col-xl-10 Полное наименование документа / Граница от - Граница до
+
+      dt.col-sm-3.col-xl-2 Комментарии:
+      dd.col-sm-9.col-xl-10 Текстовый блок 1
+
+    a.btn.btn-outline-secondary.mt-2.mb-4(
+      href="single-call.html",
+    ) Открыть карточку
+
+    h3.h5.mb-4.title-line Вложенные документы
+    .docs-list.row
+      .col-lg-4
+        .docs-list__item
+          a.docs-list__link(href="#", target="_blank")
+            <i class="fa fa-file-word-o" aria-hidden="true"></i>
+            span.docs-list__text Проектная документация.doc
+      .col-lg-4
+        .docs-list__item
+          a.docs-list__link(href="#", target="_blank")
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            span.docs-list__text Проектная документация.pdf
+      .col-lg-4
+        .docs-list__item
+          a.docs-list__link(href="#", target="_blank")
+            <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+            span.docs-list__text Проектная документация.xls
+
+  section.py-4
+    h2.h4.mb-4.title-line Детали ответа
+    dl.desc-list.row
+      dt.col-sm-3.col-xl-2 Исполнитель:
+      dd.col-sm-9.col-xl-10 ФИО
+
+      dt.col-sm-3.col-xl-2 Организация:
+      dd.col-sm-9.col-xl-10 Наименование
+
+      dt.col-sm-3.col-xl-2 Дата ответа:
+      dd.col-sm-9.col-xl-10 yyyy-mm-dd
+
+      dt.col-sm-3.col-xl-2 Статус:
+      dd.col-sm-9.col-xl-10
+        | Согласовано / Согласовано с замечаниями / Не согласовано
+        br
+        | Освидетельствовано / Освидетельствовано с замечаниями / Не освидетельствовано
+        br
+        | Устранено / Устранено с замечаниями / Не устранено
+        br
+        | Исправлено
+
+      dt.col-sm-3.col-xl-2 Комментарии:
+      dd.col-sm-9.col-xl-10 Текстовый блок 2
+
+    h3.h5.mb-4.title-line Вложенные документы
+    .docs-list.row
+      .col-lg-4
+        .docs-list__item
+          a.docs-list__link(href="#", target="_blank")
+            <i class="fa fa-file" aria-hidden="true"></i>
+            span.docs-list__text Проектная документация.dwg
+      .col-lg-4
+        .docs-list__item
+          a.docs-list__link(href="#", target="_blank")
+            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+            span.docs-list__text Проектная документация.png

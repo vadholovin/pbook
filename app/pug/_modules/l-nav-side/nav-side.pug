@@ -1,0 +1,34 @@
+.nav-aside
+  ul.aside-menu
+    li.aside-menu__item
+      a.aside-menu__link.js-aside-menu-link(href='#')
+        svg.icon.icon-idea
+          use(xlink:href="#idea")
+        .aside-menu__item-text Мои задачи
+      ul.aside-submenu.js-dropdown-menu
+        li.aside-submenu__item(class= pageClass == 'tasks-active-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='tasks-active.html') Текущие
+        li.aside-submenu__item(class= pageClass == 'tasks-archive-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='tasks-archive.html') Архивные
+    li.aside-menu__item
+      a.aside-menu__link.js-aside-menu-link(href='#')
+        svg.icon.icon-architecture
+          use(xlink:href="#architecture")
+        .aside-menu__item-text Библиотека Проекта
+      ul.aside-submenu.js-dropdown-menu
+        li.aside-submenu__item(class= pageClass == 'docs-project-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='docs-project.html') Проектная документация
+        li.aside-submenu__item(class= pageClass == 'docs-work-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='docs-work.html') Рабочая документация
+        li.aside-submenu__item(class= pageClass == 'docs-tech-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='docs-tech.html') Технологическая документация
+    li.aside-menu__item
+      a.aside-menu__link.js-aside-menu-link(href='#')
+        svg.icon.icon-blueprint
+          use(xlink:href="#blueprint")
+        .aside-menu__item-text Журнал работ
+      ul.aside-submenu.js-dropdown-menu
+        li.aside-submenu__item(class= pageClass == 'journal-reception-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='journal-receptions.html') Освидетельствование работ
+        li.aside-submenu__item(class= pageClass == 'journal-precept-page' ? 'is-current' : '')
+          a.aside-submenu__link(href='journal-precepts.html') Предписания об устранении нарушений

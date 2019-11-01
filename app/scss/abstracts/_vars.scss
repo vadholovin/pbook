@@ -1,0 +1,32 @@
+// Colors
+$text-color: #162143;
+
+$blue: #4863f0 !default;
+$blue-light: #5c74f2;
+$blue-lighter: #eff2fc;
+$red: #eb3174 !default;
+$red-light: #ea6b99;
+$red-lighter: #feedf3;
+$orange: #e29c68 !default;
+$orange-light: #e0b595;
+$orange-lighter: #ffeeda;
+$green: #48bb79 !default;
+$green-light: #88d3a8;
+$green-lighter: #e9faee;
+$gray: #575f78;
+$gray-dark: #162143;
+$gray-light: #d2d4dd;
+
+// Bootstrap overrides
+$primary:       $blue !default;
+$secondary:     $gray !default;
+$success:       $green !default;
+$info:          $blue-light !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-light !default;
+$dark:          $gray-dark !default;
+
+
+// Fonts
+$primary-font: 'Open Sans', sans-serif;
