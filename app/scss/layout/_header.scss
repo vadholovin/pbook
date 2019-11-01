@@ -70,9 +70,6 @@
 
 .header__module--app-main {
   flex-grow: 1;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  font-size: 0.75rem;
 }
 
 .header__btn {
@@ -141,6 +138,10 @@
 .app-header__content {
   display: flex;
   align-items: center;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .app-header__content-right {

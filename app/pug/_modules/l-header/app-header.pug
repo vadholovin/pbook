@@ -2,10 +2,6 @@ header.header.app-header
   .d-flex
     if pageClass === 'projects-page'
       .header__module.header__module--app-main
-        .app-header__content
-          .app-header__content-right.ml-auto.text-right
-            .app-header__name Фамилия Имя Отчество
-            .app-header__company Наименование организации
       .header__module.header__module--app-right.d-flex
         a.header__btn.header__btn-settings(
           href="settings.html",
@@ -26,13 +22,9 @@ header.header.app-header
           area-label="Назад к выбору проекта",
         )
           svg.icon.icon-back
-            use(xlink:href="#back")
+            use(href="#back")
           span.header__btn-text Назад к выбору проекта
       .header__module.header__module--app-main
-        .app-header__content
-          .app-header__content-right.ml-auto.text-right
-            .app-header__name Фамилия Имя Отчество
-            .app-header__company Наименование организации
       .header__module.header__module--app-right
         a.header__btn.header__btn-logout(
           href="index.html",
@@ -47,16 +39,13 @@ header.header.app-header
           area-label="Назад к выбору проекта",
         )
           svg.icon.icon-back
-            use(xlink:href="#back")
+            use(href="#back")
           span.header__btn-text Назад к выбору проекта
       .header__module.header__module--app-main
         .app-header__content
           .app-header__content-left
             h1.app-header__title.mb-0 Полное наименование открытого проекта
 
-          .app-header__content-right.ml-auto.text-right
-            .app-header__name Фамилия Имя Отчество
-            .app-header__company Наименование организации
       .header__module.header__module--app-right
         a.header__btn.header__btn-logout(
           href="index.html",
